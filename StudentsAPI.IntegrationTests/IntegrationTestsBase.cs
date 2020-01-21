@@ -13,7 +13,7 @@ namespace StudentsAPI.IntegrationTests
         public IntegrationTestsBase(StudentsApiWebApplicationFactory<Startup> factory)
         {
             client = factory.CreateClient();
-            client.BaseAddress = new Uri("https://localhost:5002/");
+            client.BaseAddress = new Uri("https://localhost:5000/");
             client.DefaultRequestHeaders.Add("api-version", "2.0");
             client.DefaultRequestHeaders.Add("x-api-key", "123456");
             this.factory = factory;
