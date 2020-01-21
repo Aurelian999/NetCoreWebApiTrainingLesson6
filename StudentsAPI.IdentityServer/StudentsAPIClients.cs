@@ -46,5 +46,9 @@ namespace StudentsAPI.IdentityServer
             };
         }
 
+        public void Remove(Client client)
+        {
+            clients.Remove(client);
+        }
     }
 }

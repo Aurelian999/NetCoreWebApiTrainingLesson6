@@ -7,5 +7,6 @@ namespace StudentsAPI.IdentityServer
     {
         void Add(Client client);
         List<Client> GetAll();
+        void Remove(Client client);
     }
 }
