@@ -51,7 +51,7 @@ namespace StudentsAPI
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer( options =>
                 {
-                    options.Authority = "https://localhost:5000";
+                    options.Authority = "https://localhost:44380";
                     options.Audience = StudentsAPIResource.APIName;
                 });
 

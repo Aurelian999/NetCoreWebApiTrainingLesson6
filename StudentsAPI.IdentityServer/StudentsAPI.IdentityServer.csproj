@@ -2,15 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>960d0089-b0bc-41a6-8726-c6f8e335485b</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="IdentityServer4" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.1" />
     <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\StudentsAPI.Core.Entities\StudentsAPI.Core.Entities.csproj" />
+    <ProjectReference Include="..\StudentsAPIClient\StudentsAPIClient.csproj" />
   </ItemGroup>
 
 </Project>

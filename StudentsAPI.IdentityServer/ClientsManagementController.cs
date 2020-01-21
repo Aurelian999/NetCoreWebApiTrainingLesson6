@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace StudentsAPI.IdentityServer
 {
-    [Authorize("studentapi:admin")]
+    [Authorize(Policy = "Admin")]
     [Route("api/[controller]")]
     [ApiController]
     public class ClientsManagementController : ControllerBase
